@@ -2,22 +2,22 @@
 
 论文图片保留在仓库根目录的 `img/`。站点使用 GitHub raw 链接引用，不把图片复制进 `docs-site/`，避免同一批二进制文件保存两份。
 
-## embedded 图
+## 从论文里抽取出来的图
 
-这些图来自 `img/embedded/`，适合直接插入正文页面。
+这些图来自 [`img/embedded/`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/tree/main/img/embedded)。它们不是整页截图，而是从论文页面里单独抽出来的图，更适合放进正文解释。读的时候可以把它们分成几类：硬件长什么样、雷达看到什么、FFT/点云中间结果是什么、实验和训练结果怎么展示。
 
 ### 雷达硬件与传感器
 
 ![pdf_image-002-000](https://raw.githubusercontent.com/billzi2016/mmlock-fmcw-radar-deep-security/main/img/embedded/pdf_image-002-000.png)
 
 - 原图：`img/embedded/pdf_image-002-000.png`
-- 内容：毫米波雷达开发板正面图，可以用来解释项目使用的传感器硬件形态。
+- 内容：毫米波雷达开发板正面图。它回答的是“这个项目里的雷达硬件大概长什么样”，不是算法结果图。
 - 建议位置：[雷达基础](radar-basics.md)、[项目说明](project-notes.md)。
 
 ![pdf_image-008-015](https://raw.githubusercontent.com/billzi2016/mmlock-fmcw-radar-deep-security/main/img/embedded/pdf_image-008-015.png)
 
 - 原图：`img/embedded/pdf_image-008-015.png`
-- 内容：雷达板图片，和 `pdf_image-002-000.png` 类似，适合在硬件或实验设置处作为补充图。
+- 内容：另一张雷达板图片，和 `pdf_image-002-000.png` 属于同一类硬件图。写实验设置时可以用它说明传感器本体。
 - 建议位置：[mmLock 论文解读](mmlock-paper.md)。
 
 ![pdf_image-008-018](https://raw.githubusercontent.com/billzi2016/mmlock-fmcw-radar-deep-security/main/img/embedded/pdf_image-008-018.png)
@@ -37,7 +37,7 @@
 ![pdf_image-002-001](https://raw.githubusercontent.com/billzi2016/mmlock-fmcw-radar-deep-security/main/img/embedded/pdf_image-002-001.png)
 
 - 原图：`img/embedded/pdf_image-002-001.png`
-- 内容：黑白雷达成像或目标轮廓示意，用于说明毫米波雷达输出不是可见光照片，而是由回波恢复出的空间结构。
+- 内容：黑白雷达成像或目标轮廓示意。它适合用来说明一件事：毫米波雷达输出不是可见光照片，而是由回波信号恢复出的空间结构。
 - 建议位置：[mmLock 论文解读](mmlock-paper.md)、[点云生成](signal-processing/point-cloud.md)。
 
 ![pdf_image-008-016](https://raw.githubusercontent.com/billzi2016/mmlock-fmcw-radar-deep-security/main/img/embedded/pdf_image-008-016.png)
@@ -81,7 +81,7 @@
 ![pdf_image-002-002](https://raw.githubusercontent.com/billzi2016/mmlock-fmcw-radar-deep-security/main/img/embedded/pdf_image-002-002.png)
 
 - 原图：`img/embedded/pdf_image-002-002.png`
-- 内容：热力图形式的雷达中间结果，可用来说明 range heatmap 或能量分布。
+- 内容：热力图形式的雷达中间结果。颜色越亮，通常表示某些距离或区域上的反射能量越强。它适合放在 FFT 页面里解释“原始信号变成能量图”这一步。
 - 建议位置：[FFT 处理流程](signal-processing/fft-pipeline.md)。
 
 ![pdf_image-005-006](https://raw.githubusercontent.com/billzi2016/mmlock-fmcw-radar-deep-security/main/img/embedded/pdf_image-005-006.png)
@@ -93,7 +93,7 @@
 ![pdf_image-002-003](https://raw.githubusercontent.com/billzi2016/mmlock-fmcw-radar-deep-security/main/img/embedded/pdf_image-002-003.png)
 
 - 原图：`img/embedded/pdf_image-002-003.png`
-- 内容：三维点云图，显示雷达检测到的空间反射点。
+- 内容：三维点云图。图里的点不是人体表面扫描点，而是从雷达能量峰里挑出来的反射证据。
 - 建议位置：[点云生成](signal-processing/point-cloud.md)。
 
 ![pdf_image-002-004](https://raw.githubusercontent.com/billzi2016/mmlock-fmcw-radar-deep-security/main/img/embedded/pdf_image-002-004.png)

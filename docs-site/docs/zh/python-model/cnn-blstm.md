@@ -1,6 +1,6 @@
 # CNN + BiLSTM
 
-用户离开检测不能只看单帧。人从坐着、起身、转身、离开雷达视野，是一个连续过程。`cnn_blstm_pointcloud_training.ipynb` 用 CNN + BiLSTM 来处理这种“每帧有空间结构、帧间有时间变化”的数据。
+用户离开检测不能只看单帧。人从坐着、起身、转身、离开雷达视野，是一个连续过程。[`cnn_blstm_pointcloud_training.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/cnn_blstm_pointcloud_training.ipynb) 用 CNN + BiLSTM 来处理这种“每帧有空间结构、帧间有时间变化”的数据。
 
 ## 模型到底在学什么
 

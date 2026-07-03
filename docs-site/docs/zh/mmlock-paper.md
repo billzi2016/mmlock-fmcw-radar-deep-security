@@ -25,7 +25,7 @@
 
 ## 论文和 notebook 的对应关系
 
-`mmlock_c61_paper_reading_zh.ipynb` 已经把论文拆成了多个主题：
+[`mmlock_c61_paper_reading_zh.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/mmlock_c61_paper_reading_zh.ipynb) 已经把论文拆成了多个主题：
 
 - 系统图和主流程。
 - Abstract 和 Introduction 的问题背景。

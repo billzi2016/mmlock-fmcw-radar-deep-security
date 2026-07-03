@@ -7,9 +7,9 @@
 ## 主要材料
 
 - [`C61.pdf`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/C61.pdf)：论文原文。
-- `mmlock_c61_paper_reading_zh.ipynb`：中文论文阅读笔记。
-- `radar_fft_cube_progress.ipynb`：raw ADC 到 FFT cube 和点云的 notebook。
-- `cnn_blstm_pointcloud_training.ipynb`：点云序列分类训练 notebook。
+- [`mmlock_c61_paper_reading_zh.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/mmlock_c61_paper_reading_zh.ipynb)：中文论文阅读笔记。
+- [`radar_fft_cube_progress.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/radar_fft_cube_progress.ipynb)：raw ADC 到 FFT cube 和点云的 notebook。
+- [`cnn_blstm_pointcloud_training.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/cnn_blstm_pointcloud_training.ipynb)：点云序列分类训练 notebook。
 - `radar_fft_cube_progress_parallel/`：批量 FFT 和点云生成代码。
 - `img/`：论文页面图和抽取图。
 

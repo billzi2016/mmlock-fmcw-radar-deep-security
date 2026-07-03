@@ -2,7 +2,7 @@
 
 雷达前端采到的 raw ADC 数据，本质上是一串复数采样。它还不是点云，也不是图像。要让模型使用，第一步是把这些采样恢复成有物理意义的多维结构。
 
-`radar_fft_cube_progress.ipynb` 中的流程是：
+[`radar_fft_cube_progress.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/radar_fft_cube_progress.ipynb) 中的流程是：
 
 ```text
 read_dca1000_complex_bin

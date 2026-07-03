@@ -1,6 +1,6 @@
 # 训练流程
 
-`cnn_blstm_pointcloud_training.ipynb` 的训练流程从点云文件开始，不从 raw ADC 数据开始。前面的 FFT pipeline 负责把雷达原始数据转成逐帧点云，训练 notebook 负责把这些点云组织成动作片段。
+[`cnn_blstm_pointcloud_training.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/cnn_blstm_pointcloud_training.ipynb) 的训练流程从点云文件开始，不从 raw ADC 数据开始。前面的 FFT pipeline 负责把雷达原始数据转成逐帧点云，训练 notebook 负责把这些点云组织成动作片段。
 
 ## 数据入口
 
