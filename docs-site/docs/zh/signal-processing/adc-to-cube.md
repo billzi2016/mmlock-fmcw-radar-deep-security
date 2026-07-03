@@ -80,6 +80,18 @@ flowchart TB
 
 这张图对应 notebook 里的函数顺序，也对应并行版本的代码拆分。
 
+## 继续看真实处理代码
+
+当前仓库的 [`radar_fft_cube_progress.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/radar_fft_cube_progress.ipynb) 和 `radar_fft_cube_progress_parallel/` 更像是把 mmLock 论文相关流程拆开讲清楚。后续如果要看更完整的雷达数据处理平台，可以接着看：
+
+- [mmwave-fmcw-cascade-mimo-sensing-platform](https://github.com/billzi2016/mmwave-fmcw-cascade-mimo-sensing-platform)
+
+如果当前读者还没有真实雷达数据，或者想先在可控环境里理解 ADC、chirp、MIMO 和 FFT 的关系，可以先看模拟器：
+
+- [MIMO-FMCW-Radar-Simulator-Multiprocess](https://github.com/billzi2016/MIMO-FMCW-Radar-Simulator-Multiprocess)
+
+真实处理代码回答“采到的数据怎么处理”；模拟器回答“这些数据为什么会长成这样”。两边一起看，比只看 notebook 更容易把物理过程和代码 shape 对上。
+
 ## Radar Cube 的含义
 
 Radar cube 是一个中间表示。它把原始时域信号变成按距离、速度、角度组织的能量结构。仓库并行版本中，`angle_fft` 的输出形状写得很直接：

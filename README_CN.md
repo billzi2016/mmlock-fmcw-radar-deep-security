@@ -30,6 +30,13 @@ GitHub Pages：https://billzi2016.github.io/mmlock-fmcw-radar-deep-security/
 | [`radar_fft_cube_progress.ipynb`](radar_fft_cube_progress.ipynb) | 雷达信号处理流程 notebook，从 DCA1000 raw ADC bin 到 TDM-MIMO frame cube、Range/Doppler/Angle FFT 和点检测。 |
 | [`cnn_blstm_pointcloud_training.ipynb`](cnn_blstm_pointcloud_training.ipynb) | 点云序列建模 notebook，用于准备 radar point sequence，并训练 CNN + BiLSTM 分类器。 |
 
+## 相关代码仓库
+
+- 雷达数据处理平台：[mmwave-fmcw-cascade-mimo-sensing-platform](https://github.com/billzi2016/mmwave-fmcw-cascade-mimo-sensing-platform)
+- MIMO FMCW 雷达模拟器：[MIMO-FMCW-Radar-Simulator-Multiprocess](https://github.com/billzi2016/MIMO-FMCW-Radar-Simulator-Multiprocess)
+
+这两个仓库可以和当前项目一起看：前者更偏真实 mmWave FMCW 雷达数据处理，后者更适合用模拟器理解 MIMO、FMCW、FFT、虚拟天线和点云生成这些概念。
+
 ## 项目目标
 
 - 整理 mmLock 论文及相关项目材料，形成可展示、可维护的 FMCW radar security 项目仓库。

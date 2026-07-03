@@ -13,6 +13,19 @@
 - `radar_fft_cube_progress_parallel/`：批量 FFT 和点云生成代码。
 - `img/`：论文页面图和抽取图。
 
+## 相关代码仓库
+
+- [mmwave-fmcw-cascade-mimo-sensing-platform](https://github.com/billzi2016/mmwave-fmcw-cascade-mimo-sensing-platform)：雷达数据处理平台。适合继续看真实 mmWave FMCW 数据处理、cascade/MIMO 感知、工程化 pipeline 和更完整的处理代码。
+- [MIMO-FMCW-Radar-Simulator-Multiprocess](https://github.com/billzi2016/MIMO-FMCW-Radar-Simulator-Multiprocess)：MIMO FMCW 雷达模拟器。适合在没有硬件和真实采集数据时，用模拟方式理解 chirp、目标回波、虚拟天线、FFT 和点云生成。
+
+这两个仓库和当前站点的关系可以这样理解：
+
+```text
+当前仓库：论文、notebook、mmLock 安全场景和教学文档
+真实处理平台：更完整的雷达数据处理代码
+模拟器：用可控场景理解 MIMO/FMCW/FFT 的物理和算法
+```
+
 ## 维护原则
 
 - 文档先解释概念，再解释代码。

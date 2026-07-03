@@ -13,6 +13,11 @@ It is not yet a complete dataset release or a one-command reproduction repositor
 - `radar_fft_cube_progress_parallel/`: batch FFT and point extraction code.
 - `img/`: extracted paper figures.
 
+## Related Code Repositories
+
+- [mmwave-fmcw-cascade-mimo-sensing-platform](https://github.com/billzi2016/mmwave-fmcw-cascade-mimo-sensing-platform): radar data-processing platform for fuller mmWave FMCW / cascade MIMO sensing pipelines.
+- [MIMO-FMCW-Radar-Simulator-Multiprocess](https://github.com/billzi2016/MIMO-FMCW-Radar-Simulator-Multiprocess): MIMO FMCW radar simulator for controlled experiments around chirps, target echoes, virtual antennas, FFT, and point-cloud generation.
+
 ## Maintenance Rules
 
 - Explain concepts before code.

@@ -181,3 +181,12 @@ Angle FFT 前，代码把 `tx` 和 `rx` 展开：
 ```
 
 这不是单纯为了改 shape。`virtual_antennas` 代表空间阵列。阵列里的通道顺序决定了相位差如何对应角度。如果通道顺序和实际天线位置不一致，角度图会偏，点云的方向也会偏。
+
+## 代码和模拟器入口
+
+理解 FFT 最稳的方式是同时看两类代码：
+
+- 真实数据处理：[mmwave-fmcw-cascade-mimo-sensing-platform](https://github.com/billzi2016/mmwave-fmcw-cascade-mimo-sensing-platform)
+- MIMO FMCW 模拟器：[MIMO-FMCW-Radar-Simulator-Multiprocess](https://github.com/billzi2016/MIMO-FMCW-Radar-Simulator-Multiprocess)
+
+真实数据处理平台更接近工程落地：数据来自采集设备，噪声、标定、通道顺序、文件格式都会影响结果。模拟器更适合科普和调试：你可以控制目标位置、速度、天线参数，再观察 Range FFT、Doppler FFT、Angle FFT 为什么会产生对应变化。

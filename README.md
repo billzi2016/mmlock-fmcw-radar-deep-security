@@ -30,6 +30,13 @@ The documentation site is maintained in `docs-site/`. It explains the project fr
 | [`radar_fft_cube_progress.ipynb`](radar_fft_cube_progress.ipynb) | Step-by-step radar signal-processing notebook from DCA1000 raw ADC bin data to TDM-MIMO frame cube, Range/Doppler/Angle FFT, and point detection. |
 | [`cnn_blstm_pointcloud_training.ipynb`](cnn_blstm_pointcloud_training.ipynb) | Point-cloud sequence modeling notebook that prepares radar point sequences and trains a CNN + BiLSTM classifier. |
 
+## Related Code Repositories
+
+- Radar data-processing platform: [mmwave-fmcw-cascade-mimo-sensing-platform](https://github.com/billzi2016/mmwave-fmcw-cascade-mimo-sensing-platform)
+- MIMO FMCW radar simulator: [MIMO-FMCW-Radar-Simulator-Multiprocess](https://github.com/billzi2016/MIMO-FMCW-Radar-Simulator-Multiprocess)
+
+These repositories are useful companions to this project: the first one is closer to real mmWave FMCW radar data processing, while the second one helps explain and test MIMO FMCW radar concepts in a simulator setting.
+
 ## Project Goals
 
 - Organize the mmLock paper and related materials into a presentable and maintainable FMCW radar security project repository.

@@ -23,6 +23,13 @@ This site starts from radar intuition, then explains FMCW sensing, the mmLock pa
 | `radar_fft_cube_progress.ipynb` | Raw ADC to TDM-MIMO frame cube, Range/Doppler/Angle FFT, and point detection. |
 | `cnn_blstm_pointcloud_training.ipynb` | Point-cloud sequence preparation and CNN + BiLSTM classifier training. |
 
+## Related Code Repositories
+
+- Radar data-processing platform: [mmwave-fmcw-cascade-mimo-sensing-platform](https://github.com/billzi2016/mmwave-fmcw-cascade-mimo-sensing-platform)
+- MIMO FMCW radar simulator: [MIMO-FMCW-Radar-Simulator-Multiprocess](https://github.com/billzi2016/MIMO-FMCW-Radar-Simulator-Multiprocess)
+
+The data-processing platform is closer to real mmWave FMCW radar pipelines. The simulator is useful for understanding chirps, MIMO, FFT, virtual antennas, and point-cloud generation in a controlled setting.
+
 ## Paper
 
 - Repository PDF: [`C61.pdf`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/C61.pdf)
