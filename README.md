@@ -1,32 +1,32 @@
 # mmLock FMCW Radar Deep Security
 
-## 项目简介
+## Overview
 
-mmLock FMCW Radar Deep Security 是一个面向设备安全场景的毫米波雷达感知项目，围绕用户离开检测、数据防盗保护和高质量 mmWave radar imaging 展开。项目基于公开论文材料整理，突出 FMCW radar sensing、deep learning 建模和 security 防护三个核心方向。
+mmLock FMCW Radar Deep Security is a millimeter-wave radar sensing project for device-security scenarios. It centers on user-leaving detection, anti-data-theft protection, and high-quality mmWave radar imaging. The repository is organized around public paper materials and highlights three core directions: FMCW radar sensing, deep learning modeling, and security protection.
 
-**技术标签**：`fmcw` · `deeplearning` · `security` · `mmwave-radar` · `point-cloud`
+**Tags**: `fmcw` · `deeplearning` · `security` · `mmwave-radar` · `point-cloud`
 
-## 项目目标
+## Project Goals
 
-- 整理 mmLock 论文及相关项目材料，形成可展示、可维护的 FMCW radar security 项目仓库。
-- 突出毫米波 FMCW 雷达在安全感知中的工程价值。
-- 保留后续扩展空间，便于补充代码复现、模型结构说明、数据处理流程和实验记录。
+- Organize the mmLock paper and related materials into a presentable and maintainable FMCW radar security project repository.
+- Highlight the engineering value of millimeter-wave FMCW radar for security sensing.
+- Preserve room for future expansion, including code reproduction, model-architecture notes, data-processing workflows, and experiment logs.
 
-## 核心功能
+## Core Capabilities
 
-- 用户离开检测：利用毫米波雷达感知用户离开行为，为自动锁屏和数据防护提供触发依据。
-- 高质量雷达成像：围绕 mmWave radar imaging 和三维人体点云/网格表达组织项目内容。
-- 深度学习识别：将深度学习模型用于雷达感知数据的行为识别与安全判断。
-- 安全场景落地：服务于终端设备、办公设备和智能空间中的数据防盗保护需求。
+- User-leaving detection: use millimeter-wave radar to detect when a user leaves, providing a trigger for automatic screen lock and data protection.
+- High-quality radar imaging: structure the repository around mmWave radar imaging and 3D human point-cloud or mesh representations.
+- Deep-learning-based recognition: apply deep learning models to radar sensing data for behavior recognition and security judgment.
+- Security-oriented deployment: target data-theft protection use cases in end devices, office devices, and smart spaces.
 
-## 技术栈
+## Technology Stack
 
 - FMCW mmWave radar sensing
 - Radar imaging and point-cloud processing
 - Deep learning for behavior recognition
 - Security-oriented user presence detection
 
-## 项目结构
+## Project Structure
 
 ```text
 mmlock-fmcw-radar-deep-security/
@@ -46,39 +46,39 @@ mmlock-fmcw-radar-deep-security/
 └── .gitignore
 ```
 
-## 运行方式
+## How to Use
 
-当前仓库以论文材料归档和项目说明为主，暂未包含可运行代码。后续如补充代码，可在 README 中继续完善环境配置、数据准备、训练流程和复现实验说明。
+At the current stage, the repository mainly serves as a paper-material archive and project description. It does not yet provide a complete runnable pipeline at the repository root. If executable code is expanded later, the README can be updated with environment setup, data preparation, training workflow, and reproduction instructions.
 
-## 当前进度
+## Current Progress
 
-- 已整理论文 PDF。
-- 已建立独立项目目录。
-- 已补充项目说明、技术标签和来源说明。
-- 已补充 raw ADC bin 到 radar FFT cube/点云的 notebook 流程。
-- 已补充面向大规模样本的多进程并行处理框架。
-- 已提取论文图片到 `img/`，并补充中文逐段解读 notebook。
-- 已补充基于并行 FFT 点云输出格式的 CNN + BiLSTM 识别 notebook。
+- The paper PDF has been archived.
+- An independent project directory has been established.
+- Project description, technical tags, and source information have been added.
+- A notebook workflow from raw ADC bin data to radar FFT cube and point cloud has been added.
+- A multiprocessing framework for large-scale sample processing has been added.
+- Paper figures have been extracted into `img/`, and a Chinese notebook with paragraph-by-paragraph reading notes has been added.
+- A CNN + BiLSTM notebook based on the parallel FFT point-cloud output format has been added.
 
-## 后续计划
+## Next Steps
 
-- 补充系统架构图与数据流说明。
-- 整理 FMCW 雷达数据处理流程。
-- 补充 deep learning 模型结构与训练/推理流程。
-- 增加 security 场景说明、威胁模型和适用边界。
-- 如代码开放，补充安装、运行和实验复现文档。
+- Add a system architecture diagram and data-flow description.
+- Organize the FMCW radar data-processing pipeline.
+- Add deep-learning model architecture notes and training/inference workflows.
+- Expand the security scenario description, threat model, and applicability boundaries.
+- If code is opened further, add installation, runtime, and experiment-reproduction documentation.
 
-## 论文来源与版权说明
+## Paper Source and Copyright Notes
 
-论文文件：`C61.pdf`
+Paper file: `C61.pdf`
 
-论文标题：mmLock: User Leaving Detection Against Data Theft via High-Quality mmWave Radar Imaging
+Paper title: *mmLock: User Leaving Detection Against Data Theft via High-Quality mmWave Radar Imaging*
 
-作者：Jiawei Xu, Ziqian Bi, Amit Singha, Tao Li, Yimin Chen, Yanchao Zhang
+Authors: Jiawei Xu, Ziqian Bi, Amit Singha, Tao Li, Yimin Chen, Yanchao Zhang
 
-会议：2023 32nd International Conference on Computer Communications and Networks (ICCCN), 2023
+Conference: *2023 32nd International Conference on Computer Communications and Networks (ICCCN), 2023*
 
-Google Scholar 条目可按如下形式识别：
+The Google Scholar entry can be identified as:
 
 ```text
 mmLock: User leaving detection against data theft via high-quality mmWave radar imaging
@@ -86,11 +86,11 @@ J Xu, Z Bi, A Singha, T Li, Y Chen, Y Zhang
 2023 32nd International Conference on Computer Communications and Networks ..., 2023
 ```
 
-BibTeX：
+BibTeX:
 
 ```bibtex
 @inproceedings{xu2023mmlock,
-  title={mmLock: User Leaving Detection Against Data Theft via High-Quality mmWave Radar Imaging},
+  title={mmLock: User leaving detection against data theft via High-Quality mmWave Radar Imaging},
   author={Xu, Jiawei and Bi, Ziqian and Singha, Amit and Li, Tao and Chen, Yimin and Zhang, Yanchao},
   booktitle={2023 32nd International Conference on Computer Communications and Networks (ICCCN)},
   pages={1--10},
@@ -101,14 +101,14 @@ BibTeX：
 }
 ```
 
-ASU 论文记录：https://asu.elsevierpure.com/en/publications/mmlock-user-leaving-detection-against-data-theft-via-high-quality/
+ASU paper record: `https://asu.elsevierpure.com/en/publications/mmlock-user-leaving-detection-against-data-theft-via-high-quality/`
 
-公开来源：https://labs.engineering.asu.edu/cnsg/wp-content/uploads/sites/147/2024/02/C61.pdf
+Public source: `https://labs.engineering.asu.edu/cnsg/wp-content/uploads/sites/147/2024/02/C61.pdf`
 
-DOI：https://doi.org/10.1109/ICCCN58024.2023.10230151
+DOI: `https://doi.org/10.1109/ICCCN58024.2023.10230151`
 
-本仓库中的论文 PDF 是作者自有论文材料，用于项目材料归档、工程说明和学术展示。ASU CNSG 网站提供了公开 PDF 链接，ASU 官方论文记录中也收录了该论文及 DOI 信息。
+The paper PDF in this repository is preserved as author-owned paper material for project archiving, engineering notes, and academic presentation. The ASU CNSG website provides a public PDF link, and the ASU official paper record also includes the paper and DOI information.
 
-对于 NSF 支持产生的同行评议论文或正式会议论文，NSF Public Access Policy 要求相关论文版本进入 NSF 指定的公开访问仓储并在规定时间内可公开访问。该仓库保留 ASU 公开来源、ASU 论文记录和 DOI，便于追溯正式出版信息与公开访问来源。
+For NSF-supported peer-reviewed papers or formal conference papers, the NSF Public Access Policy requires the relevant paper version to enter the designated public-access repository and become publicly accessible within the required time window. This repository preserves the ASU public source, ASU paper record, and DOI so that the formal publication information and public-access source can be traced.
 
-论文版权、出版版本和再分发权限仍以 IEEE、作者出版协议、ASU 公开页面及 NSF public access 相关政策为准；引用、传播或再分发时应优先使用正式出版信息和上述公开来源链接。
+Copyright, publisher-version status, and redistribution permissions still depend on IEEE policies, the author publication agreement, the ASU public page, and the relevant NSF public-access policy. When citing, distributing, or redistributing the work, the formal publication record and the public-source links above should be preferred.
