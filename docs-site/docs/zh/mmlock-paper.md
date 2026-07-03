@@ -2,7 +2,16 @@
 
 论文题目是 *mmLock: User Leaving Detection Against Data Theft via High-Quality mmWave Radar Imaging*。它研究的不是一般意义上的人体识别，而是一个更窄的安全动作：当用户离开设备时，系统及时检测并触发数据保护。
 
-## 问题是什么
+## 论文信息
+
+- 仓库 PDF：[`C61.pdf`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/C61.pdf)
+- 作者：Jiawei Xu, Ziqian Bi, Amit Singha, Tao Li, Yimin Chen, Yanchao Zhang
+- 会议：2023 32nd International Conference on Computer Communications and Networks (ICCCN)
+- DOI：https://doi.org/10.1109/ICCCN58024.2023.10230151
+- ASU 论文记录：https://asu.elsevierpure.com/en/publications/mmlock-user-leaving-detection-against-data-theft-via-high-quality/
+- 公开 PDF 来源：[ASU CNSG 公开 PDF](https://labs.engineering.asu.edu/cnsg/wp-content/uploads/sites/147/2024/02/C61.pdf)
+
+## 研究问题
 
 办公设备或个人终端经常会出现一个空档：用户已经离开，但屏幕、文件或业务系统还没有及时锁定。旁边的人可能在这段时间接触敏感信息。mmLock 想解决的就是这个空档。
 

@@ -2,6 +2,14 @@
 
 FMCW 是 `Frequency-Modulated Continuous Wave`，意思是频率调制连续波。它不只是发一个短脉冲，而是持续发射一段频率随时间变化的信号，这段信号通常叫 `chirp`。
 
+## chirp 可以怎么理解
+
+chirp 像一段不断升高音调的哨声，只不过雷达发的是电磁波，不是声音。发射端知道自己每一刻正在发什么频率；接收端拿到的是延迟后的回波。
+
+如果目标很近，回波回来得快，接收信号和当前发射信号差得不多。如果目标更远，回波回来得更晚，此时发射端已经扫到更高频率了，二者的频率差就更大。
+
+这就是 FMCW 的妙处：它把“时间延迟”变成了“频率差”。频率差比直接测极短的飞行时间更容易处理。
+
 可以把 chirp 想成一段“频率坡道”：开始频率较低，随后按固定斜率升高。目标反射回来的信号会比当前发射信号晚一点到达。雷达把发射信号和接收信号混频后，会得到一个频率差，这个差叫 `beat frequency`。
 
 ## 距离来自频率差
@@ -16,6 +24,12 @@ range = c * beat_frequency / (2 * slope)
 
 这里 `c` 是光速，`slope` 是 chirp 的扫频斜率。分母里的 `2` 来自往返路径：信号从雷达到目标再回来，走了两倍距离。
 
+一个直观版本：
+
+```text
+目标越远 -> 回波越晚 -> beat frequency 越大 -> Range FFT 里的距离 bin 越靠后
+```
+
 ## 速度来自多个 chirp 之间的变化
 
 一次 chirp 可以提供距离线索，但速度需要看连续 chirp。运动目标会让回波相位在慢时间维度上产生规律变化。沿 chirp 维度做 Doppler FFT，就能把这种变化转成速度相关的频率分量。
@@ -25,6 +39,8 @@ range = c * beat_frequency / (2 * slope)
 - fast-time：一个 chirp 内的 ADC sample，用于 Range FFT。
 - slow-time：一帧内连续 chirp 或 loop，用于 Doppler FFT。
 - channel：多个 RX/TX 组合形成的天线通道，用于角度估计。
+
+所以一个 frame 不是“一张图”，而是一小段时间里的多通道采样。它同时包含一个 chirp 内的快采样、多个 chirp 之间的慢变化，以及多个天线之间的空间差异。
 
 ## 角度来自天线阵列
 
@@ -40,7 +56,7 @@ range_fft(frame_cube)
 
 这三步正好对应距离、速度和方向。后续点云检测会在这个三维频域结构上找能量较强的候选点。
 
-## TX、RX 是什么
+## TX 和 RX
 
 `TX` 是 transmit antenna，发射天线。`RX` 是 receive antenna，接收天线。
 
@@ -126,7 +142,29 @@ flowchart LR
 
 看懂这个图，后面的 notebook 就顺了。`sample` 维度解决距离，`loop` 维度解决速度，`tx/rx` 展开的虚拟天线维度解决方向。
 
-## 和 WiFi CSI 的差别再说清楚一点
+## 这和 notebook 怎么对应
+
+`radar_fft_cube_progress.ipynb` 里的函数顺序其实就是一条教学路径：
+
+```text
+read_dca1000_complex_bin
+```
+
+先把采集卡写出来的二进制 ADC 数据读成复数采样。
+
+```text
+reshape_tdm_mimo_frames
+```
+
+再按雷达配置把线性采样重排成 `[frame, loop, tx, rx, sample]`。这一步做错，后面的距离可能还像对的，但速度和角度会开始偏。
+
+```text
+range_fft -> doppler_fft -> angle_fft
+```
+
+最后依次沿 sample、loop、virtual antenna 三个维度做 FFT。每一步都不是“为了用 FFT 而 FFT”，而是在回答不同的物理问题。
+
+## WiFi CSI 和 FMCW 的工程差异
 
 WiFi CSI 也有幅度和相位，也能看到人体运动带来的扰动。但 WiFi 的子载波、天线和信道估计是围绕通信设计的。它能做感知，是因为人体改变了通信信道。
 

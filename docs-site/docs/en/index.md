@@ -23,4 +23,12 @@ This site starts from radar intuition, then explains FMCW sensing, the mmLock pa
 | `radar_fft_cube_progress.ipynb` | Raw ADC to TDM-MIMO frame cube, Range/Doppler/Angle FFT, and point detection. |
 | `cnn_blstm_pointcloud_training.ipynb` | Point-cloud sequence preparation and CNN + BiLSTM classifier training. |
 
+## Paper
+
+- Repository PDF: [`C61.pdf`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/C61.pdf)
+- Title: *mmLock: User Leaving Detection Against Data Theft via High-Quality mmWave Radar Imaging*
+- DOI: https://doi.org/10.1109/ICCCN58024.2023.10230151
+- ASU record: https://asu.elsevierpure.com/en/publications/mmlock-user-leaving-detection-against-data-theft-via-high-quality/
+- Public PDF source: [ASU CNSG public PDF](https://labs.engineering.asu.edu/cnsg/wp-content/uploads/sites/147/2024/02/C61.pdf)
+
 ![mmLock paper figure](https://raw.githubusercontent.com/billzi2016/mmlock-fmcw-radar-deep-security/main/img/embedded/pdf_image-002-000.png)

@@ -33,7 +33,7 @@ TDM-MIMO 雷达数据常见维度可以这样理解：
 
 `reshape_tdm_mimo_frames` 的意义就是把原本线性排列的 ADC 数据，重排成后续 FFT 能处理的 frame cube。
 
-## TX/RX 通道顺序为什么重要
+## TX/RX 通道顺序
 
 raw ADC 文件里通常不是直接存成 `[loop, tx, rx, sample]` 这种舒服的形状。采集卡更可能按时间顺序把 I/Q 采样连续写进 bin 文件。后处理要知道雷达配置，才能把线性数据还原成多维数组。
 
@@ -65,7 +65,7 @@ frame
 
 如果 TX/RX 顺序错了，Range FFT 可能还能看到能量，但 Angle FFT 会乱，因为角度估计依赖天线之间的相位关系。
 
-## 从采样流到 cube 的 Mermaid 图
+## 采样流到 cube 的流程图
 
 ```mermaid
 flowchart TB
@@ -80,7 +80,7 @@ flowchart TB
 
 这张图对应 notebook 里的函数顺序，也对应并行版本的代码拆分。
 
-## Radar Cube 是什么
+## Radar Cube 的含义
 
 Radar cube 是一个中间表示。它把原始时域信号变成按距离、速度、角度组织的能量结构。仓库并行版本中，`angle_fft` 的输出形状写得很直接：
 

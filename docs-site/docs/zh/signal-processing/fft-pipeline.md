@@ -2,6 +2,18 @@
 
 FFT 的作用是把采样序列拆成频率成分。FMCW 雷达里的距离、速度和角度，都可以通过不同维度上的频率或相位结构估计出来。
 
+## 先把 FFT 放回任务里
+
+如果只说“做三次 FFT”，这句话没有信息量。对 mmLock 来说，三次 FFT 分别在回答三个和离开检测有关的问题：
+
+```text
+Range FFT：人离设备多远？
+Doppler FFT：人体反射是在靠近还是远离？
+Angle FFT：反射大概来自哪个方向？
+```
+
+用户从椅子上离开时，这三个答案会一起变化。距离可能变大，速度会出现连续变化，角度也可能从设备正前方偏到一侧。模型后面看到的点云，就是这些变化被提取后的结果。
+
 仓库的核心实现来自 `radar_fft_cube_progress_parallel/src/fft_layers.py`。
 
 ## 1. Range FFT
@@ -21,6 +33,8 @@ def range_fft(frame_cube, cfg):
 
 Range FFT 沿 `sample` 维度做。这个维度也叫 fast-time，因为它来自一个 chirp 内的快速 ADC 采样。FMCW 的 beat frequency 就藏在这里，FFT 后的 range bin 可以换算成距离。
 
+可以把它看成把一段混在一起的回波拆开：近处反射落在较小的 range bin，远处反射落在较大的 range bin。桌子、人体、墙都可能有自己的距离峰。
+
 ## 2. Doppler FFT
 
 ```python
@@ -38,6 +52,8 @@ def doppler_fft(range_cube, cfg):
 ```
 
 Doppler FFT 沿 `loop` 维度做。这个维度也叫 slow-time，因为它看的是多个 chirp 之间的相位变化。目标靠近或远离时，这个维度会出现规律变化，FFT 后得到 Doppler bin。
+
+如果人体静止，Doppler 接近 0；如果用户起身或走开，人体反射会在 Doppler 维度上出现非零速度成分。这个维度对“离开”这种动作很关键，因为离开不是静态位置，而是一段移动过程。
 
 ## 3. Angle FFT
 
@@ -62,7 +78,9 @@ def angle_fft(doppler_cube, cfg):
 
 Angle FFT 会先把 TX/RX 展开成虚拟天线阵列，再沿天线维度处理。这样做能从空间相位差里估计方向。
 
-## 为什么要加窗口
+角度估计让系统不只知道“有东西在 1 米外”，还能知道它大概在雷达正前方、左侧还是右侧。附近攻击者场景里，这个方向信息尤其重要，因为系统需要区分目标用户和其他人的反射。
+
+## 窗口函数
 
 三个 FFT 前都用了 Hann window。窗口函数的作用是降低频谱泄漏：真实目标不一定刚好落在某个离散 bin 中，如果直接 FFT，能量会扩散到旁边的 bin。窗口会让频谱形状更稳定，代价是主瓣会变宽一些。
 
@@ -76,7 +94,7 @@ power -> dB -> 有效距离范围 -> median noise floor + threshold -> top-K
 
 它不是最终论文级检测器，但适合做批处理预处理和教学说明。后续如果要严格复现实验，可以替换为 CA-CFAR 或 OS-CFAR。
 
-## 三个 FFT 为什么不能混在一起讲
+## 三个 FFT 的分工
 
 三个 FFT 都叫 FFT，但处理的维度完全不同。把它们混在一起说，会让后面的点云和模型都变成黑箱。
 

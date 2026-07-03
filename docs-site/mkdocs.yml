@@ -17,24 +17,6 @@ theme:
       primary: blue grey
       accent: deep orange
 
-nav:
-  - 首页: index.md
-  - 无线感知: wireless-sensing.md
-  - 雷达基础: radar-basics.md
-  - FMCW 雷达: fmcw-radar.md
-  - mmLock 论文解读: mmlock-paper.md
-  - 信号处理:
-      - ADC 到 Radar Cube: signal-processing/adc-to-cube.md
-      - FFT 处理流程: signal-processing/fft-pipeline.md
-      - 点云生成: signal-processing/point-cloud.md
-  - Python 与模型:
-      - Notebook 总览: python-model/notebooks.md
-      - CNN + BiLSTM: python-model/cnn-blstm.md
-      - 训练流程: python-model/training-flow.md
-  - 安全场景: security-scenario.md
-  - 图片索引: figures.md
-  - 项目说明: project-notes.md
-
 plugins:
   - search
   - i18n:

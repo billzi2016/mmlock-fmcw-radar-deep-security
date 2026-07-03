@@ -12,6 +12,16 @@ GitHub Pages：https://billzi2016.github.io/mmlock-fmcw-radar-deep-security/
 
 文档站点位于 `docs-site/`，按从浅到深的路径组织：先讲无线感知、雷达基础和 FMCW 雷达，再讲 mmLock 论文系统，随后解释 FFT 处理、点云生成、Python notebook 和 CNN + BiLSTM 模型流程。无线感知部分会把 WiFi CSI 和 FMCW 雷达的相似点、差异和工程取舍讲清楚。
 
+## 论文
+
+- 仓库 PDF：[`C61.pdf`](C61.pdf)
+- 论文标题：mmLock: User Leaving Detection Against Data Theft via High-Quality mmWave Radar Imaging
+- 作者：Jiawei Xu, Ziqian Bi, Amit Singha, Tao Li, Yimin Chen, Yanchao Zhang
+- 会议：2023 32nd International Conference on Computer Communications and Networks (ICCCN)
+- DOI：https://doi.org/10.1109/ICCCN58024.2023.10230151
+- ASU 论文记录：https://asu.elsevierpure.com/en/publications/mmlock-user-leaving-detection-against-data-theft-via-high-quality/
+- 公开 PDF 来源：[ASU CNSG 公开 PDF](https://labs.engineering.asu.edu/cnsg/wp-content/uploads/sites/147/2024/02/C61.pdf)
+
 ## Notebook
 
 | Notebook | 用途 |
@@ -89,7 +99,7 @@ mmlock-fmcw-radar-deep-security/
 
 ## 论文来源与版权说明
 
-论文文件：`C61.pdf`
+论文文件：[`C61.pdf`](C61.pdf)
 
 论文标题：mmLock: User Leaving Detection Against Data Theft via High-Quality mmWave Radar Imaging
 
@@ -122,7 +132,7 @@ BibTeX：
 
 ASU 论文记录：https://asu.elsevierpure.com/en/publications/mmlock-user-leaving-detection-against-data-theft-via-high-quality/
 
-公开来源：https://labs.engineering.asu.edu/cnsg/wp-content/uploads/sites/147/2024/02/C61.pdf
+公开来源：[ASU CNSG 公开 PDF](https://labs.engineering.asu.edu/cnsg/wp-content/uploads/sites/147/2024/02/C61.pdf)
 
 DOI：https://doi.org/10.1109/ICCCN58024.2023.10230151
 

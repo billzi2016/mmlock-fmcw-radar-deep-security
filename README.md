@@ -12,6 +12,16 @@ GitHub Pages: https://billzi2016.github.io/mmlock-fmcw-radar-deep-security/
 
 The documentation site is maintained in `docs-site/`. It explains the project from wireless sensing and radar basics to FMCW sensing, mmLock paper reading, FFT processing, point-cloud generation, and the CNN + BiLSTM model workflow. The wireless-sensing page also compares WiFi CSI sensing with FMCW radar sensing.
 
+## Paper
+
+- Repository PDF: [`C61.pdf`](C61.pdf)
+- Title: *mmLock: User Leaving Detection Against Data Theft via High-Quality mmWave Radar Imaging*
+- Authors: Jiawei Xu, Ziqian Bi, Amit Singha, Tao Li, Yimin Chen, Yanchao Zhang
+- Venue: 2023 32nd International Conference on Computer Communications and Networks (ICCCN)
+- DOI: https://doi.org/10.1109/ICCCN58024.2023.10230151
+- ASU record: https://asu.elsevierpure.com/en/publications/mmlock-user-leaving-detection-against-data-theft-via-high-quality/
+- Public PDF source: [ASU CNSG public PDF](https://labs.engineering.asu.edu/cnsg/wp-content/uploads/sites/147/2024/02/C61.pdf)
+
 ## Notebooks
 
 | Notebook | Purpose |
@@ -89,7 +99,7 @@ At the current stage, the repository mainly serves as a paper-material archive a
 
 ## Paper Source and Copyright Notes
 
-Paper file: `C61.pdf`
+Paper file: [`C61.pdf`](C61.pdf)
 
 Paper title: *mmLock: User Leaving Detection Against Data Theft via High-Quality mmWave Radar Imaging*
 
@@ -122,7 +132,7 @@ BibTeX:
 
 ASU paper record: `https://asu.elsevierpure.com/en/publications/mmlock-user-leaving-detection-against-data-theft-via-high-quality/`
 
-Public source: `https://labs.engineering.asu.edu/cnsg/wp-content/uploads/sites/147/2024/02/C61.pdf`
+Public source: [ASU CNSG public PDF](https://labs.engineering.asu.edu/cnsg/wp-content/uploads/sites/147/2024/02/C61.pdf)
 
 DOI: `https://doi.org/10.1109/ICCCN58024.2023.10230151`
 
