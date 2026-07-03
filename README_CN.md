@@ -6,6 +6,20 @@ mmLock FMCW Radar Deep Security 是一个面向设备安全场景的毫米波雷
 
 **技术标签**：`fmcw` · `deeplearning` · `security` · `mmwave-radar` · `point-cloud`
 
+## 文档站点
+
+GitHub Pages：https://billzi2016.github.io/mmlock-fmcw-radar-deep-security/
+
+文档站点位于 `docs-site/`，按从浅到深的路径组织：先讲无线感知、雷达基础和 FMCW 雷达，再讲 mmLock 论文系统，随后解释 FFT 处理、点云生成、Python notebook 和 CNN + BiLSTM 模型流程。无线感知部分会把 WiFi CSI 和 FMCW 雷达的相似点、差异和工程取舍讲清楚。
+
+## Notebook
+
+| Notebook | 用途 |
+| --- | --- |
+| [`mmlock_c61_paper_reading_zh.ipynb`](mmlock_c61_paper_reading_zh.ipynb) | mmLock 中文论文阅读笔记，覆盖系统流程、威胁模型、FFT、点云生成、PointNet/LSTM 思路和实验解读。 |
+| [`radar_fft_cube_progress.ipynb`](radar_fft_cube_progress.ipynb) | 雷达信号处理流程 notebook，从 DCA1000 raw ADC bin 到 TDM-MIMO frame cube、Range/Doppler/Angle FFT 和点检测。 |
+| [`cnn_blstm_pointcloud_training.ipynb`](cnn_blstm_pointcloud_training.ipynb) | 点云序列建模 notebook，用于准备 radar point sequence，并训练 CNN + BiLSTM 分类器。 |
+
 ## 项目目标
 
 - 整理 mmLock 论文及相关项目材料，形成可展示、可维护的 FMCW radar security 项目仓库。
@@ -33,6 +47,10 @@ mmlock-fmcw-radar-deep-security/
 ├── C61.pdf
 ├── citation.bib
 ├── cnn_blstm_pointcloud_training.ipynb
+├── docs-site/
+│   ├── docs/
+│   ├── mkdocs.yml
+│   └── requirements.txt
 ├── img/
 │   ├── embedded/
 │   └── pages/
@@ -55,6 +73,7 @@ mmlock-fmcw-radar-deep-security/
 - 已整理论文 PDF。
 - 已建立独立项目目录。
 - 已补充项目说明、技术标签和来源说明。
+- 已在 `docs-site/` 补充 GitHub Pages 文档站点。
 - 已补充 raw ADC bin 到 radar FFT cube/点云的 notebook 流程。
 - 已补充面向大规模样本的多进程并行处理框架。
 - 已提取论文图片到 `img/`，并补充中文逐段解读 notebook。

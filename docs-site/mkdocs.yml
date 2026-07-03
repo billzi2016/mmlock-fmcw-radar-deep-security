@@ -1,0 +1,68 @@
+site_name: mmLock FMCW Radar Deep Security
+site_description: 教学型 mmWave FMCW radar security 文档站点
+site_url: https://billzi2016.github.io/mmlock-fmcw-radar-deep-security/
+repo_url: https://github.com/billzi2016/mmlock-fmcw-radar-deep-security
+repo_name: billzi2016/mmlock-fmcw-radar-deep-security
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - toc.follow
+  palette:
+    - scheme: default
+      primary: blue grey
+      accent: deep orange
+
+nav:
+  - 首页: index.md
+  - 无线感知: wireless-sensing.md
+  - 雷达基础: radar-basics.md
+  - FMCW 雷达: fmcw-radar.md
+  - mmLock 论文解读: mmlock-paper.md
+  - 信号处理:
+      - ADC 到 Radar Cube: signal-processing/adc-to-cube.md
+      - FFT 处理流程: signal-processing/fft-pipeline.md
+      - 点云生成: signal-processing/point-cloud.md
+  - Python 与模型:
+      - Notebook 总览: python-model/notebooks.md
+      - CNN + BiLSTM: python-model/cnn-blstm.md
+      - 训练流程: python-model/training-flow.md
+  - 安全场景: security-scenario.md
+  - 图片索引: figures.md
+  - 项目说明: project-notes.md
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: zh
+          name: 中文
+          default: true
+          build: true
+        - locale: en
+          name: English
+          build: true
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js

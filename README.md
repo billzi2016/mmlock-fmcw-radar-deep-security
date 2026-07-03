@@ -6,6 +6,20 @@ mmLock FMCW Radar Deep Security is a millimeter-wave radar sensing project for d
 
 **Tags**: `fmcw` · `deeplearning` · `security` · `mmwave-radar` · `point-cloud`
 
+## Documentation Site
+
+GitHub Pages: https://billzi2016.github.io/mmlock-fmcw-radar-deep-security/
+
+The documentation site is maintained in `docs-site/`. It explains the project from wireless sensing and radar basics to FMCW sensing, mmLock paper reading, FFT processing, point-cloud generation, and the CNN + BiLSTM model workflow. The wireless-sensing page also compares WiFi CSI sensing with FMCW radar sensing.
+
+## Notebooks
+
+| Notebook | Purpose |
+| --- | --- |
+| [`mmlock_c61_paper_reading_zh.ipynb`](mmlock_c61_paper_reading_zh.ipynb) | Chinese paper-reading notebook for mmLock, covering the system flow, threat model, FFT, point-cloud generation, PointNet/LSTM ideas, and experiment notes. |
+| [`radar_fft_cube_progress.ipynb`](radar_fft_cube_progress.ipynb) | Step-by-step radar signal-processing notebook from DCA1000 raw ADC bin data to TDM-MIMO frame cube, Range/Doppler/Angle FFT, and point detection. |
+| [`cnn_blstm_pointcloud_training.ipynb`](cnn_blstm_pointcloud_training.ipynb) | Point-cloud sequence modeling notebook that prepares radar point sequences and trains a CNN + BiLSTM classifier. |
+
 ## Project Goals
 
 - Organize the mmLock paper and related materials into a presentable and maintainable FMCW radar security project repository.
@@ -33,6 +47,10 @@ mmlock-fmcw-radar-deep-security/
 ├── C61.pdf
 ├── citation.bib
 ├── cnn_blstm_pointcloud_training.ipynb
+├── docs-site/
+│   ├── docs/
+│   ├── mkdocs.yml
+│   └── requirements.txt
 ├── img/
 │   ├── embedded/
 │   └── pages/
@@ -55,6 +73,7 @@ At the current stage, the repository mainly serves as a paper-material archive a
 - The paper PDF has been archived.
 - An independent project directory has been established.
 - Project description, technical tags, and source information have been added.
+- A GitHub Pages documentation site has been added under `docs-site/`.
 - A notebook workflow from raw ADC bin data to radar FFT cube and point cloud has been added.
 - A multiprocessing framework for large-scale sample processing has been added.
 - Paper figures have been extracted into `img/`, and a Chinese notebook with paragraph-by-paragraph reading notes has been added.

@@ -21,6 +21,7 @@ env/
 node_modules/
 dist/
 build/
+docs-site/site/
 .next/
 
 # Logs and temporary files

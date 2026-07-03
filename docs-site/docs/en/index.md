@@ -1,0 +1,26 @@
+# mmLock: From Radar Sensing to Data Protection
+
+mmLock studies a focused device-security problem: after a user leaves a device, the screen or application may remain accessible for a short time. The paper uses mmWave FMCW radar to sense the leaving process and trigger data-protection actions.
+
+This site starts from radar intuition, then explains FMCW sensing, the mmLock paper, FFT-based radar processing, point-cloud generation, and the CNN + BiLSTM notebook workflow.
+
+## Reading Path
+
+1. [Radar Basics](radar-basics.md): what radar measures and why it is not a camera.
+2. [Wireless Sensing](wireless-sensing.md): how WiFi CSI, radar, and other signal-based sensing methods are related.
+3. [FMCW Radar](fmcw-radar.md): chirps, beat frequency, range, velocity, and angle.
+4. [mmLock Paper](mmlock-paper.md): system flow, threat model, and method boundaries.
+5. [FFT Pipeline](signal-processing/fft-pipeline.md): how raw ADC samples become radar cubes.
+6. [Point Cloud](signal-processing/point-cloud.md): what each radar point means.
+7. [Notebooks](python-model/notebooks.md): the three project notebooks and their roles.
+8. [CNN + BiLSTM](python-model/cnn-blstm.md): point-cloud sequence classification.
+
+## Project Notebooks
+
+| Notebook | Role |
+| --- | --- |
+| `mmlock_c61_paper_reading_zh.ipynb` | Chinese paper-reading notes for system flow, threat model, FFT, point clouds, PointNet/LSTM, and experiments. |
+| `radar_fft_cube_progress.ipynb` | Raw ADC to TDM-MIMO frame cube, Range/Doppler/Angle FFT, and point detection. |
+| `cnn_blstm_pointcloud_training.ipynb` | Point-cloud sequence preparation and CNN + BiLSTM classifier training. |
+
+![mmLock paper figure](https://raw.githubusercontent.com/billzi2016/mmlock-fmcw-radar-deep-security/main/img/embedded/pdf_image-002-000.png)
