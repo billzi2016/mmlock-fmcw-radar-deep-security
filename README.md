@@ -26,9 +26,12 @@ The documentation site is maintained in `docs-site/`. It explains the project fr
 
 | Notebook | Purpose |
 | --- | --- |
-| [`mmlock_c61_paper_reading_zh.ipynb`](mmlock_c61_paper_reading_zh.ipynb) | Chinese paper-reading notebook for mmLock, covering the system flow, threat model, FFT, point-cloud generation, PointNet/LSTM ideas, and experiment notes. |
-| [`radar_fft_cube_progress.ipynb`](radar_fft_cube_progress.ipynb) | Step-by-step radar signal-processing notebook from DCA1000 raw ADC bin data to TDM-MIMO frame cube, Range/Doppler/Angle FFT, and point detection. |
-| [`cnn_blstm_pointcloud_training.ipynb`](cnn_blstm_pointcloud_training.ipynb) | Point-cloud sequence modeling notebook that prepares radar point sequences and trains a CNN + BiLSTM classifier. |
+| [`mmlock_c61_paper_reading_en.ipynb`](mmlock_c61_paper_reading_en.ipynb) | English paper-reading notebook for mmLock. |
+| [`radar_fft_cube_progress_en.ipynb`](radar_fft_cube_progress_en.ipynb) | English radar FFT processing workflow. |
+| [`cnn_blstm_pointcloud_training_en.ipynb`](cnn_blstm_pointcloud_training_en.ipynb) | English point-cloud sequence modeling workflow. |
+| [`mmlock_c61_paper_reading_zh.ipynb`](mmlock_c61_paper_reading_zh.ipynb) | Chinese paper-reading notebook for mmLock. |
+| [`radar_fft_cube_progress_zh.ipynb`](radar_fft_cube_progress_zh.ipynb) | Chinese radar FFT processing workflow. |
+| [`cnn_blstm_pointcloud_training_zh.ipynb`](cnn_blstm_pointcloud_training_zh.ipynb) | Chinese point-cloud sequence modeling workflow. |
 
 ## Related Code Repositories
 
@@ -63,7 +66,8 @@ These repositories are useful companions to this project: the first one is close
 mmlock-fmcw-radar-deep-security/
 ├── C61.pdf
 ├── citation.bib
-├── cnn_blstm_pointcloud_training.ipynb
+├── cnn_blstm_pointcloud_training_en.ipynb
+├── cnn_blstm_pointcloud_training_zh.ipynb
 ├── docs-site/
 │   ├── docs/
 │   ├── mkdocs.yml
@@ -71,8 +75,10 @@ mmlock-fmcw-radar-deep-security/
 ├── img/
 │   ├── embedded/
 │   └── pages/
+├── mmlock_c61_paper_reading_en.ipynb
 ├── mmlock_c61_paper_reading_zh.ipynb
-├── radar_fft_cube_progress.ipynb
+├── radar_fft_cube_progress_en.ipynb
+├── radar_fft_cube_progress_zh.ipynb
 ├── radar_fft_cube_progress_parallel/
 │   ├── README.md
 │   ├── run_parallel_fft.py

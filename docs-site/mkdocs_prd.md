@@ -20,8 +20,8 @@
 
 - `C61.pdf`：论文原文，题为 `mmLock: User Leaving Detection Against Data Theft via High-Quality mmWave Radar Imaging`。
 - `mmlock_c61_paper_reading_zh.ipynb`：中文论文阅读笔记。
-- `radar_fft_cube_progress.ipynb`：从 raw ADC 数据到 radar FFT cube / 点云的处理流程。
-- `cnn_blstm_pointcloud_training.ipynb`：基于点云序列的 CNN + BiLSTM 识别模型流程。
+- `radar_fft_cube_progress_zh.ipynb`：从 raw ADC 数据到 radar FFT cube / 点云的处理流程。
+- `cnn_blstm_pointcloud_training_zh.ipynb`：基于点云序列的 CNN + BiLSTM 识别模型流程。
 - `radar_fft_cube_progress_parallel/`：面向批量数据的并行 FFT 处理代码。
 - `img/pages/`：论文页面截图。
 - `img/embedded/`：从论文中抽取出的系统图、流程图、实验图等图片。
@@ -162,7 +162,7 @@ docs-site/
 - radar cube 的维度含义：range、Doppler、angle 或 channel。
 - 数据重排、窗口函数、零填充等步骤的作用。
 
-必须参考 `radar_fft_cube_progress.ipynb` 和 `radar_fft_cube_progress_parallel/src/` 中的实现命名，避免写成纯理论页面。
+必须参考 `radar_fft_cube_progress_zh.ipynb` 和 `radar_fft_cube_progress_parallel/src/` 中的实现命名，避免写成纯理论页面。
 
 ### 6.6 FFT 流程 `signal-processing/fft-pipeline.md`
 
@@ -195,8 +195,8 @@ docs-site/
 该页负责把三个 notebook 的作用讲清楚：
 
 - `mmlock_c61_paper_reading_zh.ipynb`：论文阅读和图文解释。
-- `radar_fft_cube_progress.ipynb`：单样本或演示性质的 FFT 处理流程。
-- `cnn_blstm_pointcloud_training.ipynb`：点云序列分类模型训练流程。
+- `radar_fft_cube_progress_zh.ipynb`：单样本或演示性质的 FFT 处理流程。
+- `cnn_blstm_pointcloud_training_zh.ipynb`：点云序列分类模型训练流程。
 
 每个 notebook 需要说明：
 
@@ -217,7 +217,7 @@ docs-site/
 - 标签、训练集、验证集、损失函数和评价指标要写清楚。
 - 需要说明模型输出如何映射到安全动作。
 
-该页必须来自 `cnn_blstm_pointcloud_training.ipynb` 的实际流程，不要凭空设计一个模型。
+该页必须来自 `cnn_blstm_pointcloud_training_zh.ipynb` 的实际流程，不要凭空设计一个模型。
 
 ### 6.10 训练流程 `python-model/training-flow.md`
 

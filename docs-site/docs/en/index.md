@@ -19,9 +19,12 @@ This site starts from radar intuition, then explains FMCW sensing, the mmLock pa
 
 | Notebook | Role |
 | --- | --- |
-| `mmlock_c61_paper_reading_zh.ipynb` | Chinese paper-reading notes for system flow, threat model, FFT, point clouds, PointNet/LSTM, and experiments. |
-| `radar_fft_cube_progress.ipynb` | Raw ADC to TDM-MIMO frame cube, Range/Doppler/Angle FFT, and point detection. |
-| `cnn_blstm_pointcloud_training.ipynb` | Point-cloud sequence preparation and CNN + BiLSTM classifier training. |
+| [`mmlock_c61_paper_reading_en.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/mmlock_c61_paper_reading_en.ipynb) | English paper-reading notebook for mmLock. |
+| [`radar_fft_cube_progress_en.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/radar_fft_cube_progress_en.ipynb) | English radar FFT processing workflow. |
+| [`cnn_blstm_pointcloud_training_en.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/cnn_blstm_pointcloud_training_en.ipynb) | English point-cloud sequence modeling workflow. |
+| [`mmlock_c61_paper_reading_zh.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/mmlock_c61_paper_reading_zh.ipynb) | Chinese paper-reading notebook for mmLock. |
+| [`radar_fft_cube_progress_zh.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/radar_fft_cube_progress_zh.ipynb) | Chinese radar FFT processing workflow. |
+| [`cnn_blstm_pointcloud_training_zh.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/cnn_blstm_pointcloud_training_zh.ipynb) | Chinese point-cloud sequence modeling workflow. |
 
 ## Related Code Repositories
 

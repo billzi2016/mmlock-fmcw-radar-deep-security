@@ -26,9 +26,12 @@ GitHub Pages：https://billzi2016.github.io/mmlock-fmcw-radar-deep-security/
 
 | Notebook | 用途 |
 | --- | --- |
-| [`mmlock_c61_paper_reading_zh.ipynb`](mmlock_c61_paper_reading_zh.ipynb) | mmLock 中文论文阅读笔记，覆盖系统流程、威胁模型、FFT、点云生成、PointNet/LSTM 思路和实验解读。 |
-| [`radar_fft_cube_progress.ipynb`](radar_fft_cube_progress.ipynb) | 雷达信号处理流程 notebook，从 DCA1000 raw ADC bin 到 TDM-MIMO frame cube、Range/Doppler/Angle FFT 和点检测。 |
-| [`cnn_blstm_pointcloud_training.ipynb`](cnn_blstm_pointcloud_training.ipynb) | 点云序列建模 notebook，用于准备 radar point sequence，并训练 CNN + BiLSTM 分类器。 |
+| [`mmlock_c61_paper_reading_zh.ipynb`](mmlock_c61_paper_reading_zh.ipynb) | mmLock 中文论文阅读笔记。 |
+| [`radar_fft_cube_progress_zh.ipynb`](radar_fft_cube_progress_zh.ipynb) | 中文雷达 FFT 处理流程 notebook。 |
+| [`cnn_blstm_pointcloud_training_zh.ipynb`](cnn_blstm_pointcloud_training_zh.ipynb) | 中文点云序列建模 notebook。 |
+| [`mmlock_c61_paper_reading_en.ipynb`](mmlock_c61_paper_reading_en.ipynb) | mmLock 英文论文阅读笔记。 |
+| [`radar_fft_cube_progress_en.ipynb`](radar_fft_cube_progress_en.ipynb) | 英文雷达 FFT 处理流程 notebook。 |
+| [`cnn_blstm_pointcloud_training_en.ipynb`](cnn_blstm_pointcloud_training_en.ipynb) | 英文点云序列建模 notebook。 |
 
 ## 相关代码仓库
 
@@ -63,7 +66,8 @@ GitHub Pages：https://billzi2016.github.io/mmlock-fmcw-radar-deep-security/
 mmlock-fmcw-radar-deep-security/
 ├── C61.pdf
 ├── citation.bib
-├── cnn_blstm_pointcloud_training.ipynb
+├── cnn_blstm_pointcloud_training_en.ipynb
+├── cnn_blstm_pointcloud_training_zh.ipynb
 ├── docs-site/
 │   ├── docs/
 │   ├── mkdocs.yml
@@ -71,8 +75,10 @@ mmlock-fmcw-radar-deep-security/
 ├── img/
 │   ├── embedded/
 │   └── pages/
+├── mmlock_c61_paper_reading_en.ipynb
 ├── mmlock_c61_paper_reading_zh.ipynb
-├── radar_fft_cube_progress.ipynb
+├── radar_fft_cube_progress_en.ipynb
+├── radar_fft_cube_progress_zh.ipynb
 ├── radar_fft_cube_progress_parallel/
 │   ├── README.md
 │   ├── run_parallel_fft.py

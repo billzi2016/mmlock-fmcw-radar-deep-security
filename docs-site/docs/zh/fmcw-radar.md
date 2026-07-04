@@ -157,7 +157,7 @@ flowchart LR
 
 ## 这和 notebook 怎么对应
 
-[`radar_fft_cube_progress.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/radar_fft_cube_progress.ipynb) 里的函数顺序其实就是一条教学路径：
+[`radar_fft_cube_progress_zh.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/radar_fft_cube_progress_zh.ipynb) 里的函数顺序其实就是一条教学路径：
 
 ```text
 read_dca1000_complex_bin

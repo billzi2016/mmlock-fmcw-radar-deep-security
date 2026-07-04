@@ -1,6 +1,6 @@
 # CNN + BiLSTM
 
-User leaving is not a single-frame event. It is a sequence: sitting, standing up, turning, and moving away. `cnn_blstm_pointcloud_training.ipynb` uses CNN + BiLSTM for this type of data.
+User leaving is not a single-frame event. It is a sequence: sitting, standing up, turning, and moving away. [`cnn_blstm_pointcloud_training_en.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/cnn_blstm_pointcloud_training_en.ipynb) uses CNN + BiLSTM for this type of data. The aligned Chinese version is [`cnn_blstm_pointcloud_training_zh.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/cnn_blstm_pointcloud_training_zh.ipynb).
 
 ## Frame-Level Features
 

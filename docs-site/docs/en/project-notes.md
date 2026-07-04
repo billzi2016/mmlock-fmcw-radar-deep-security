@@ -7,9 +7,12 @@ It is not yet a complete dataset release or a one-command reproduction repositor
 ## Main Materials
 
 - [`C61.pdf`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/C61.pdf): paper PDF.
-- `mmlock_c61_paper_reading_zh.ipynb`: Chinese paper-reading notes.
-- `radar_fft_cube_progress.ipynb`: raw ADC to radar cube and point-cloud workflow.
-- `cnn_blstm_pointcloud_training.ipynb`: point-cloud sequence training workflow.
+- [`mmlock_c61_paper_reading_en.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/mmlock_c61_paper_reading_en.ipynb): English paper-reading notes.
+- [`radar_fft_cube_progress_en.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/radar_fft_cube_progress_en.ipynb): English raw ADC to radar cube and point-cloud workflow.
+- [`cnn_blstm_pointcloud_training_en.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/cnn_blstm_pointcloud_training_en.ipynb): English point-cloud sequence training workflow.
+- [`mmlock_c61_paper_reading_zh.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/mmlock_c61_paper_reading_zh.ipynb): Chinese paper-reading notes.
+- [`radar_fft_cube_progress_zh.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/radar_fft_cube_progress_zh.ipynb): Chinese raw ADC to radar cube and point-cloud workflow.
+- [`cnn_blstm_pointcloud_training_zh.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/cnn_blstm_pointcloud_training_zh.ipynb): Chinese point-cloud sequence training workflow.
 - `radar_fft_cube_progress_parallel/`: batch FFT and point extraction code.
 - `img/`: extracted paper figures.
 

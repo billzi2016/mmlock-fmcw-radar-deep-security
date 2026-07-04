@@ -2,7 +2,7 @@
 
 Raw ADC data is a stream of complex samples. It is not a point cloud and not an image. The first task is to reshape it into a frame structure that FFT processing can use.
 
-`radar_fft_cube_progress.ipynb` uses this path:
+[`radar_fft_cube_progress_en.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/radar_fft_cube_progress_en.ipynb) uses this path. The aligned Chinese version is [`radar_fft_cube_progress_zh.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/radar_fft_cube_progress_zh.ipynb).
 
 ```text
 read_dca1000_complex_bin

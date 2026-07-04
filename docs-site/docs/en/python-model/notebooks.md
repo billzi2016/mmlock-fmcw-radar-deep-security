@@ -1,28 +1,25 @@
 # Notebooks
 
-The repository contains three notebooks. Together they cover paper reading, radar signal processing, and point-cloud sequence modeling.
+The repository now contains six notebooks: three English notebooks and three Chinese notebooks. The English documentation lists English notebooks first, then Chinese notebooks. Code cells stay aligned across language versions; the English versions mainly make markdown headings and explanations easier for English readers.
 
-## `mmlock_c61_paper_reading_zh.ipynb`
+## English Versions
 
-Chinese paper-reading notes for mmLock. It covers the system flow, threat model, point-cloud generation, three FFT stages, MIMO virtual antennas, denoising, PointNet/LSTM modeling, and experiment notes.
+| Notebook | Role |
+| --- | --- |
+| [`mmlock_c61_paper_reading_en.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/mmlock_c61_paper_reading_en.ipynb) | English paper-reading notebook for the mmLock paper. |
+| [`radar_fft_cube_progress_en.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/radar_fft_cube_progress_en.ipynb) | English radar FFT processing workflow. |
+| [`cnn_blstm_pointcloud_training_en.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/cnn_blstm_pointcloud_training_en.ipynb) | English point-cloud sequence modeling workflow. |
 
-## `radar_fft_cube_progress.ipynb`
+## Chinese Versions
 
-Signal-processing notebook:
+| Notebook | Role |
+| --- | --- |
+| [`mmlock_c61_paper_reading_zh.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/mmlock_c61_paper_reading_zh.ipynb) | Chinese paper-reading notebook for mmLock. |
+| [`radar_fft_cube_progress_zh.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/radar_fft_cube_progress_zh.ipynb) | Chinese radar FFT processing workflow. |
+| [`cnn_blstm_pointcloud_training_zh.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/cnn_blstm_pointcloud_training_zh.ipynb) | Chinese point-cloud sequence modeling workflow. |
 
-```text
-read DCA1000 bin
--> reshape TDM-MIMO frame cube
--> Range FFT
--> Doppler FFT
--> Angle FFT
--> physical-axis conversion
--> point detection
--> visualization
-```
+## Reading Path
 
-## `cnn_blstm_pointcloud_training.ipynb`
-
-Model-training notebook. It loads radar point clouds, builds fixed-length sequences, normalizes features, creates PyTorch datasets, trains CNN + BiLSTM, and provides segment-level inference.
-
-The repository does not include a full public dataset, so the docs describe workflow and interfaces rather than claiming complete reproduction metrics.
+1. Start with the paper-reading notebook to understand the security problem and system design.
+2. Read the FFT notebook to see how raw ADC data becomes radar cubes and point clouds.
+3. Read the training notebook to see how point-cloud sequences become CNN + BiLSTM inputs.

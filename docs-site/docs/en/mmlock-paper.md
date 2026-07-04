@@ -17,7 +17,7 @@ mmLock uses mmWave radar to sense the leaving process. The radar signal is proce
 
 ## Notebook Link
 
-`mmlock_c61_paper_reading_zh.ipynb` breaks the paper into system flow, threat model, point-cloud generation, three FFT stages, virtual antennas, denoising, PointNet/LSTM modeling, and experiment notes.
+[`mmlock_c61_paper_reading_en.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/mmlock_c61_paper_reading_en.ipynb) breaks the paper into system flow, threat model, point-cloud generation, three FFT stages, virtual antennas, denoising, PointNet/LSTM modeling, and experiment notes. The aligned Chinese version is [`mmlock_c61_paper_reading_zh.ipynb`](https://github.com/billzi2016/mmlock-fmcw-radar-deep-security/blob/main/mmlock_c61_paper_reading_zh.ipynb).
 
 ## Boundary
 

@@ -18,8 +18,8 @@
 
 本 PRD 不要求自动运行以下任务：
 
-- 执行 `radar_fft_cube_progress.ipynb`。
-- 执行 `cnn_blstm_pointcloud_training.ipynb`。
+- 执行 `radar_fft_cube_progress_zh.ipynb`。
+- 执行 `cnn_blstm_pointcloud_training_zh.ipynb`。
 - 重新训练 CNN + BiLSTM 模型。
 - 重新从 PDF 中抽取图片。
 - 处理大规模 radar raw ADC 数据。
